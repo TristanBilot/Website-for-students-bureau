@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Site officiel Insight 
+Last modif : 06/03/18 par Tristan -->
+<head>
+    <title> Insight - BDE </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="img/logo_date.png" />
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="fontawesome/web-fonts-with-css/css/fontawesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+    <span id="top"></span>
+    <!-- ne pas toucher -->
+    <div class="jumbotron bckg_logo_fixed" style="height: 45em;">
+    </div>
+    <!--------- -->
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header">
+                <a id="a0" onclick="act0()" class="navbar-brand slow_ancre" href="#top">Insight - BDE Info</a>
+            </div>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 0.933333px;">
+                <ul class="nav navbar-nav">
+                <li><a id="a1" class="slow_ancre" href="#notre_projet" onclick="fonction_activation1()">Notre projet</a></li>
+                <li><a id="a2" class="slow_ancre" href="#equipe" onclick="fonction_activation2()">Equipe</a></li>
+                <li><a id="a3" class="slow_ancre" href="#evenement" onclick="fonction_activation3()">Evenements</a></li>
+                <li><a id="a4" class="slow_ancre" href="#photos" onclick="fonction_activation4()">Photos</a></li>
+                <li><a id="a5" class="slow_ancre" href="#contact" onclick="fonction_activation5()">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://www.google.fr"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Quitter</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+            </nav>
+
+
+<script>
+    // changement de bckg au clic pour le navbar : nav>li>a (à améliorer)
+    function fonction_activation1() {
+        for (var i = 2; i <= 5; i++)
+            document.getElementById('a' + i).style.backgroundColor = "inherit";
+        document.getElementById('a1').style.backgroundColor = "#0A0A0A";
+    }
+
+    function fonction_activation2() {
+        document.getElementById('a2').style.backgroundColor = "#0A0A0A";
+        document.getElementById('a1').style.backgroundColor = "inherit";
+        document.getElementById('a3').style.backgroundColor = "inherit";
+        document.getElementById('a4').style.backgroundColor = "inherit";
+        document.getElementById('a5').style.backgroundColor = "inherit";
+    }
+
+    function fonction_activation3() {
+        var j = 4;
+        for (var i = 1; i <= 2 && j <= 5; i++, j++) {
+            document.getElementById('a' + i).style.backgroundColor = "inherit";
+            document.getElementById('a' + j).style.backgroundColor = "inherit";
+        }
+        document.getElementById('a3').style.backgroundColor = "#0A0A0A";
+    }
+
+    function fonction_activation4() {
+        document.getElementById('a4').style.backgroundColor = "#0A0A0A";
+        document.getElementById('a2').style.backgroundColor = "inherit";
+        document.getElementById('a3').style.backgroundColor = "inherit";
+        document.getElementById('a1').style.backgroundColor = "inherit";
+        document.getElementById('a5').style.backgroundColor = "inherit";
+    }
+
+    function fonction_activation5() {
+        document.getElementById('a5').style.backgroundColor = "#0A0A0A";
+        for (var i = 1; i <= 4; i++)
+            document.getElementById('a' + i).style.backgroundColor = "inherit";
+    }
+
+    function act0() {
+        for (var i = 0; i <= 5; i++)
+            document.getElementById('a' + i).style.backgroundColor = "inherit";
+    }
+
+</script>
+
+<body>
+    <!-- ALERT -->
+
+    <!-- FIN ALERT -->
+
+    <div class="jumbotron div1">
+        <div id="anim_hover" class="container">
+            <div class="row center">
+                <div class="jumbotron jumbotron-title bckg_none">
+                    <h1 id="notre_projet" class="big_title">NOTRE PROJET</h1>
+                    <p class="black margin-top bloc_intro"> 
+                        <span class="little_title">
+                            Insight c'est quoi ?</span><br><br> C'est avant tout un groupe d'amis qui ont décidé de se réunir afin de faire de ton année, première ou deuxième, une année inoubliable. <br><br>
+                        <span class="little_title">
+                            Comment ? </span><br><br>A travers l'organisation de soirées en partenariat avec les sections GEA et InfoCom et de soirées faites exclusivement pour vous : les Infos ! Tu n'es pas particulièrement fan des soirées ? Insight te propose également des soirées LAN mais aussi une cellule d'écoute ou encore un club de théâtre.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron bckg_team_fixed opacity">
+        <span class="filter_bckg">
+            <div id="anim_hover" class="container">
+                <div class="row center">
+                    <div class="jumbotron jumbotron-title bckg_none">
+                        <h1 id="equipe" class="big_title">L'EQUIPE</h1>
+                        <!--<p class="black margin-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis vehicula dolor ac ullamcorper. Proin interdum porttitor dapibus. Integer eget iaculis mi. Quisque mollis eros vitae nulla faucibus fermentum. </p>-->
+                        
+                        <!-- IMAGES EQUIPE -->
+                        <div class="box_little">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/marce.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Marcellino</h2>
+                                        <a class="info" href="https://www.facebook.com/marcellino.dour">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/malcolm.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Malcolm</h2>
+                                        <a class="info" href="https://www.facebook.com/malcolm.etoundi.1">Son Facebook</a>
+                                        
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                        <h2 class="h2_title_team_big">Président / Vice-président</h2>
+                    </div>
+                        <!-- SECRETAIRE TRESO -->
+                        <div class="box_little">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/morgane.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Morgane</h2>
+                                        <a class="info" href="https://www.facebook.com/morganelaurent1999">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/xav.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Xavier</h2>
+                                        <a class="info" href="https://www.facebook.com/xavier.deverdun?ref=br_rs">Son Facebook</a>
+                                        
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                        <h2 class="h2_title_team_big">Secrétaire / Trésorier</h2>
+                    </div>
+                        
+                        <!-- EVENT -->
+                    <div class="box">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/coline.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Coline</h2>
+                                        <a class="info" href="https://www.facebook.com/coline.feliciano.5">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/sammy.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Sammy</h2>
+                                        <a class="info" href="https://www.facebook.com/sammynguyen92000">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/tristan2.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Tristan</h2>
+                                        <a class="info" href="https://www.facebook.com/tristan.bilot">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        <h2 class="h2_title_team">évenementiel</h2>
+                    </div>
+                        
+                        <!-- AUDIOVISUEL -->
+                    <div class="box">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/ines.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Inès</h2>
+                                        <a class="info" href="https://www.facebook.com/ines.bdraa">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/oussama.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Oussama</h2>
+                                        <a class="info" href="https://www.facebook.com/oussama.mouinet.3">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/simon.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Simon</h2>
+                                        <a class="info" href="https://www.facebook.com/simon.weber.1998">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        <h2 class="h2_title_team">Audiovisuel</h2>
+                    </div>
+                        
+                        <!-- COM -->
+                        <div class="box_little">
+                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/max2.png" alt="">
+                                    <div class="overlay">
+                                        <h2>Max</h2>
+                                        <a class="info" href="https://www.facebook.com/profile.php?id=100009956852544">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/pauline.JPG" alt="">
+                                    <div class="overlay">
+                                        <h2>Pauline</h2>
+                                        <a class="info" href="https://www.facebook.com/pauline.enallemagne">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <h2 class="h2_title_team">Communication</h2>
+                    </div>
+                        <!-- PARTENARIAT -->
+                        <div class="box_little">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/julien.jpeg" alt="">
+                                    <div class="overlay">
+                                        <h2>Julien</h2>
+                                        <a class="info" href="https://www.facebook.com/julien.aubry.169">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                <div class="hovereffect">
+                                    <img class="img-responsive" src="img/photos/remi.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Rémi</h2>
+                                        <a class="info" href="https://www.facebook.com/remi.jhdjk">Son Facebook</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <h2 class="h2_title_team">Partenariat</h2>
+                    </div>
+    </div>
+    </div>
+    </div>
+    </span>
+    </div>
+
+    <div class="jumbotron div2">
+        <div id="anim_hover" class="container">
+            <div class="row center">
+                <div class="jumbotron jumbotron-title bckg_none">
+                    <h1 id="evenement" class="big_title">Evenements</h1>
+                    <p class="black margin-top"> </p> 
+                        <!-- event time out -->
+                    <h2 class="margintopbot">Time Out</h2>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                <div class="hovereffect">
+                                <img class="img_event" src="img/event/timeout.png" alt="">
+                                 <div class="overlay">
+                                    <h2>Time Out</h2>
+                                        <h1><a class="info" href="https://www.facebook.com/events/160420121336108/">13 Avril 2018</a></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+                    <!-- event meltdown 1 -->
+                    <h2 class="margintopbot">Meltdown #1</h2>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                <div class="hovereffect">
+                                <img class="img_event" src="img/event/melt1.jpg" alt="">
+                                 <div class="overlay">
+                                    <h2>Meltdown #1</h2>
+                                        <h1><a class="info" href="https://www.facebook.com/events/429468227492402/">29 Mars 2018</a></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-0"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron div1" style="margin-top: inherit">
+        <div id="anim_hover" class="container">
+            <div class="row center">
+                <div class="jumbotron jumbotron-title bckg_none">
+                    <h1 id="photos" class="big_title">PHOTOS</h1>
+                    <p class="black margin-top">
+                        
+                        <img class="photos_img" src="img/images/DSC_0014.JPG" alt="">
+                        <img class="photos_img" src="img/images/DSC_0092.JPG" alt="">
+                        <img class="photos_img" src="img/images/DSC_0582.JPG" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="jumbotron div2">
+        <div id="anim_hover" class="container">
+            <div class="row center">
+                <div class="jumbotron jumbotron-title bckg_none_without">
+                    <h1 id="contact" class="big_title">Contactez-nous</h1>
+                    <span class="black margin-top">
+                        <div class="bloc_social_networks" style="margin-left: -32px">
+                            <ul>
+                                <li class="box_zone"><a href="https://www.instagram.com/liste_bde_insight/?hl=fr" class="nice_font"><img class="fixed_logo" src="img/insta.png" alt="logo fb">&nbsp;Instagram</a></li>
+                                
+                                <li class="box_zone"><a href="https://www.facebook.com/Liste-BDE-Insight-1044399069031237/" class="nice_font"><img class="fixed_logo" src="img/fb.png" alt="logo fb">&nbsp;Facebook</a></li>
+                                
+                                <li class="box_zone"><a href="" class="nice_font"><img class="fixed_logo" src="img/tw.png" alt="logo fb">&nbsp;Twitter</a></li>
+
+                            </ul>
+                        </div>
+                     </span>
+                    Des questions sur le bde ? 
+                        <a class="mailto" href="mailto:insight2018.projet@gmail.com"> insight2018.projet@gmail.com
+                    </a> <br><br>
+                     Des questions sur le site ? 
+                        <a class="mailto" href="mailto:bilot.tristan@hotmail.fr"> bilot.tristan@hotmail.fr
+                    </a>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="return-to-top">
+        <div class="social">
+            <nav class="navbar navbar-default  network" style="margin: 20px; padding: 5px">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav">
+                        <a href="https://www.facebook.com/insight.lalla.1?fref=gs&dti=267270087090630&hc_location=group_dialog">
+                            <li><img class="fixed_logo" src="img/fb.png" alt="logo fb">&nbsp;Facebook Insight</li>
+                        </a>
+                        <a href="https://instagram.com/https%3A%2F%2Fwww.instagram.com%2Fprojet_insight%2F">
+                            <li><img class="fixed_logo" src="img/insta.png" alt="logo insta" href="instagram.com/?">&nbsp;Instagram Insight</li>
+                        </a>
+                        <a href="twitter.com/?">
+                            <li><img class="fixed_logo" src="img/tw.png" alt="logo tw" href="twitter.com/?">&nbsp;Twitter @insight</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    
+                    <img class="hide_element" src="img/doge.png" alt=""> <!-- HIDE ELEMENT -->
+                    
+                    <a class="slow_ancre" href="#top"><img src="img/banner.png" alt="" width="60%"></a>
+                </div>
+            </div>
+            <div class="row center">
+                <p><i class="fa fa-copyright"></i> Copyright BDE Insight 2018 </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script javascript pour transition du scroll du bouton "back-top" -->
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) {
+                $('#return-to-top').fadeIn(200);
+            } else {
+                $('#return-to-top').fadeOut(200);
+            }
+        });
+        $('#return-to-top').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 500);
+        });
+
+
+        // script pour slow effect (ne pas changer)
+        $(document).ready(function() {
+            var classe = document.getElementsByClassName('slow_ancre');
+            $(classe).on('click', function(evt) {
+                evt.preventDefault();
+                var target = $(this).attr('href');
+                $('html, body')
+                    .stop()
+                    .animate({
+                        scrollTop: $(target).offset().top
+                    }, 1000);
+            });
+        });
+
+    </script>
+
+</body>
